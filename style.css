@@ -578,10 +578,10 @@ h1{
         position: fixed;
         top: -20px;
         right: -200px;
-        /* right: 0; */
         height: 100vh;
         padding: 50px;
         transition: right 1s;
+        z-index: 1000;
        
     }
 
