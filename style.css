@@ -1,0 +1,746 @@
+:root{
+     --pointer: linear-gradient(0deg, #FEDB03, #FEDB03),
+     linear-gradient(0deg, #FFFFFF, #FFFFFF);
+     --hover: rgba(254, 219, 3, 1);
+
+     
+      --background: rgba(8, 48, 83, 1);
+       --color: rgba(0, 34, 64, 1);
+
+}
+
+html{
+    background: #eee;
+    color: black;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: inter, sans-serif;
+    
+}
+
+body{
+    margin: 0 auto;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+ #Home{
+    width: 100%;
+    background-image: url(images.file/img1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home-nav {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: 0 2.5%;
+    padding: 20px 0;
+}
+
+.home-nav nav ul{
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+    text-decoration: none;
+}
+
+.home-nav nav ul li a{
+   text-decoration: none;
+   color: white;
+   position: relative;
+   font-size: 20px;
+}
+
+.home-nav nav ul li a:hover{
+    color: var(--hover);
+}
+
+.home-nav nav ul li a::after{
+    content: " ";
+    width: 0%;
+    height: 0.6vh;
+    border-radius: 20px;
+    background-color: var(--hover);
+    position: absolute;
+    left: 0;
+    top: 20px;
+    transition: width 1s;
+}
+
+.home-nav nav ul li a:hover::after{
+    color: var(--hover);
+    width: 100%;
+}
+
+#hide{
+    display: none;
+}
+
+.bar{
+    display: none;
+    font-size: 30px;
+}
+
+ .home-content{
+    display: flex;
+    justify-content: center;
+    gap: 20%;
+    color: white;
+    margin: 0 30px;
+
+}
+
+.home-content .home-content-left{
+    width: 60%;
+}
+
+.home-content-left h1{
+    font-size: 70px;
+    font-weight: 900;
+}
+
+.home-content-left h4{
+    font-size: 50px;
+    font-weight: 100;
+    margin-top: -30px;
+    margin-left: 50px;
+    border-left: 3px solid var(--hover);
+    padding-left: 10px;
+    
+}
+.home-content .home-content-right{
+    width: 40%;
+    
+}
+
+.home-content-left p{
+    font-size: 18px;
+    margin-bottom: 7%;
+}
+
+.home-content-left a{
+    text-decoration: none;
+    color: rgb(38, 38, 42);
+    font-size: 18px;
+    font-weight: 700;
+    background: var(--hover);
+    padding: 15px 30px;
+    border-radius: 30px;
+    margin-top: 30%;
+}
+
+.home-content .home-content-right .men-img{
+    width: 477px;
+}
+
+
+/* -------------About---------- */
+#About{
+    width: 100%;
+   padding: 100px 0px;
+}
+
+#About .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 150px 30px;
+}
+
+.container .img-tage img{
+    width: 500px;
+}
+
+.container .about-text{
+    width: 50%;
+    
+}
+
+.about-text .about-top{
+    font-size: 15px;
+    position: relative;
+    margin-left: 75px;
+}
+.about-text .about-top::before{
+    content: " ";
+    width: 10%;
+    height: 3px;
+    background: var(--hover);
+    position: absolute;
+    top: 5px;
+    left: -100px;
+    margin-left: 30px;
+}
+
+.about-text h1{
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.about-text .about-end{
+    position: relative;
+    width: 70%;
+    margin-left: 80px;
+    margin-top: 50px;
+}
+
+.about-text .about-end::before{
+      content: " ";
+      position: absolute;
+      width: 4px;
+      height: 7vh;
+      background: var(--hover);
+      top: 5px;
+      left: -10px;
+}
+
+
+.About-container{
+    background: var(--background);
+    width: 100vw;
+    padding-top: 30px;
+    padding-bottom: 100px;
+    color: #eee;
+}
+
+.about-us{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.about-us P{
+    color: var(--hover);
+}
+
+
+.about-mission{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    
+    
+}
+
+.about-mission .mission, .vission{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 586px;
+    height: 200px;
+    padding: 0px 20px;
+    border-top: 5px solid rgba(1, 91, 170, 1);
+    box-shadow: 0px 3px 3px rgb(22, 22, 22);
+    margin: 30px 30px;
+}
+
+.glob{
+    width: 30%;
+    background: rgba(12, 75 131, 0.21);
+    padding: 20px;
+    border: 1px solid rgba(93, 166, 231, 1)
+}
+
+
+/* -----------------project-------------- */
+#Project{
+    width: 100%;
+}
+
+.project-head{
+    padding-top: 120px;
+    text-align: center;
+}
+
+.project-head p{
+    font-weight: 200;
+    position: relative;
+}
+
+.project-head p::before{
+    content: " ";
+    background: var(--hover);
+    position: absolute;
+    width: 4%;
+    height: 3px;
+    margin-left: 15px;
+    top: -20px;
+}
+
+.project{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin: 100px 30px;
+    text-align: center;
+}
+
+.project .project-grid{
+     line-height: 30px;
+     padding: 50px;
+}
+
+.project .project-grid h3{
+    margin-top: 3rem;
+}
+
+ .fa-angle-double-right{
+    background: rgb(223, 195, 195);
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(98, 93, 93);
+}
+
+.fa-angle-double-right:hover{
+    background: var(--hover);
+    color: var(--background);
+}
+
+
+.project-base{
+    background: url(images.file/img10.png) no-repeat;
+    width: 100vw;
+    background-color: rgba(10, 30, 100, 1);
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+ 
+.project-base .text-value{
+    width: 50%;
+    transform: translateX(35%);
+    padding: 10px;
+    
+}
+
+.text-value .top-in{
+    font-weight: 200;
+    position: relative;
+}
+
+.text-value .top-in::before{
+    content: " ";
+    background: var(--hover);
+    position: absolute;
+    width: 5%;
+    height: 3px;
+    margin-left: 10px;
+    top: -10px;
+}
+
+.text-value h1{
+    font-size: 50px;
+}
+
+.text-value .small{
+    font-size: 15px;
+}
+.text-value a{
+    background: var(--hover);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    width: 25%;
+    padding: 10px 20px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px auto;
+}
+
+.text-value .fa-play{
+    background: white;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.text-value a:hover{
+    background: white;
+}
+.text-value a .fa-play:hover{
+    background: var(--hover);
+
+}
+
+
+/* ----------------Blog----------------------- */
+#Blog{
+    width: 100%;
+}
+h1{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.Blod-container{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.Blod-container p{
+    font-weight: 200;
+    position: relative;
+}
+
+.Blod-container p::before{
+    content: " ";
+    background: var(--hover);
+    position: absolute;
+    width: 3%;
+    height: 3px;
+    margin-left: 10px;
+    top: -10px;
+}
+
+#Blog .Blog-post{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin: 60px 40px;
+    gap: 4rem;
+    text-align: left;
+}
+.Blog-post img{
+    width: 100%;
+}
+
+.Blog-post .post{
+    width: 100%;
+}
+
+.Blog-post ul{
+    list-style-type: none;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    text-align: left;
+    border-left: 4px solid var(--hover);
+}
+
+.Blog-post ul li i{
+    font-size: 18px;
+    transition: 1s;
+    
+}
+.Blog-post ul li i:hover{
+    transform: scale(1.5);
+    padding: 5px;
+    border-radius: 2px;
+    background-color: var(--hover);
+    
+}
+
+
+/* ------------------Contact-------------------- */
+
+#Contact{
+    width: 100%;
+    margin-top: 150px;
+}
+
+#Contact .contact-container{
+    background: url(images.file/img5.png) no-repeat;
+    background-size: cover;
+    padding: 100px;
+    width: 100%;
+    
+}
+.contact-container .contain{
+    margin-left: 30px;
+    color: whitesmoke;
+    font-size: 35px;
+}
+
+.contain a{
+    background: var(--background);
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    width: 25%;
+    padding: 10px 20px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contain .fa{
+    background: var(--hover);
+    padding: 10px;
+    border-radius: 50%;
+    color: var(--background);
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.contact-root .contact-grid{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   margin: 0px 30px;
+   margin-top: 150px;
+   gap: 20px;
+
+}
+
+.contact-grid .grid-template{
+    text-align: left;
+}
+
+.grid-template h3{
+    border-left: 5px solid var(--hover);
+    text-indent: 10px;
+    font-weight: bolder;
+}
+.grid-template p, li{
+    line-height: 25px;
+    font-size: 13px;
+}
+
+ .grid-template  li{
+    list-style-type: square;
+    list-style-position: inside;
+    color: var(--hover);
+    font-size: 20px;  
+    transition: 1s;
+}
+.grid-template a{
+    font-size: 13px;
+    text-decoration: none;
+    color: var(--color);
+}
+
+.grid-template li:hover{
+    transform: translateX(5px);
+}
+
+.grid-template i{
+    width: 20px;
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: 900;
+    
+}
+.grid-template .fa-google-plus-g{
+    margin-left: 0;
+}
+
+.grid-template i:hover{
+    color: var(--hover);
+}
+
+/* -----footer--------- */
+.footer{
+    background: var(--background);
+    margin-top: 50px;
+    width: 100%;
+    height: 8vh;
+    color: white;
+    font-size: 12px;
+}
+
+.footer p{
+    text-align: center;
+    transform: translateY(4vh);
+    font-weight: 100;
+}
+
+
+
+
+
+/* ---------------------------@media quary-------------------------- */
+
+
+
+@media screen and (width <= 600px) {
+    .logo-tag .my-logo{
+        width: 120px;
+    }
+    #Home{
+        height: 350px;
+    }
+    .home-nav nav ul{
+        display: block;
+        background: white;
+        position: fixed;
+        top: -20px;
+        right: -200px;
+        /* right: 0; */
+        height: 100vh;
+        padding: 50px;
+        transition: right 1s;
+       
+    }
+
+    #hide{
+        display: block;
+        color: black;
+        font-size: 40px;
+        font-weight: 900;
+        border-radius: 50%;
+
+    }
+    .home-nav nav ul li a{
+        color: black;
+        font-weight: bold;
+        line-height: 50px;
+    }
+
+    .bar{
+        display: block;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+    .home-content-left h1{
+        font-size: 30px;
+    }
+
+    .home-content .home-content-right .men-img{
+        width: 157px;
+        height: 260px;
+    }
+    .home-content-left h4{
+        font-size: 20px;
+        margin-top: -20px;
+        margin-left: 30px;
+        
+    }
+    .home-content-left p{
+        font-size: 12px;
+        margin-bottom: 7%;
+    }
+
+    .home-content-left a{
+        font-size: 10px;
+        padding: 10px 20px;
+    }
+
+
+    /* ----------------about------------- */
+
+    #About{
+        width: 100%;
+       /* padding: 50px 0px; */
+    } 
+    #About .container{
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+
+    .container .img-tage img{
+        width: 90%;
+        margin: 0 5%;
+    }
+    
+    .container .about-text{
+        width: 100%;
+        text-align: center;
+        
+    }
+    h1{
+        font-size: 30px;
+    }
+
+    .about-text h1{
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .about-mission{
+        display: block;
+    }
+
+    .about-mission .mission, .vission{
+        width: 80%;
+        margin: 10px 5%;
+    }
+
+    .glob{
+        width: 15%;
+        background: rgba(12, 75 131, 0.21);
+        padding: 10px;
+        border: 1px solid rgba(93, 166, 231, 1)
+    }
+
+    /* -----------------project---------- */
+
+    .project-head{
+        padding-top: 0;
+        font-size: 12px;
+    }
+
+    .project-head p::before{
+        width: 10%;
+    }
+
+    .project{
+        margin: 50px 30px;
+    }
+    .project-base .text-value{
+        width: 100%;
+        transform: translateX(-11%);
+        
+    }
+    .text-value h1{
+        font-size: 30px;
+    }
+
+    .text-value .top-in::before{
+        width: 10%;
+    }
+
+    .text-value a{
+        font-size: 12px;
+    }
+
+    /* -----------------block------------------- */
+    .Blod-container p::before{
+        width: 10%;
+    }
+
+    /* ---------------------contact---------------- */
+
+    .contact-container .contain{
+        width: 70%;
+        margin: 0;
+        color: whitesmoke;
+        font-size: 30px;
+    }
+
+    .contain a{
+        font-size: 12px;
+        width: 50%;
+    }
+    
+    .contact-grid .grid-template{
+        text-align: center;
+    }
+
+    .grid-template  li{
+        list-style-type: none;
+    }
+
+    .grid-template h3{
+        border: none;
+        font-size: 20px;
+    }
+
+    .flex{
+        justify-content: center;
+    }
+}
