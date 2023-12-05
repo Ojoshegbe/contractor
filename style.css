@@ -149,7 +149,6 @@ body{
 #About .container{
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     margin: 150px 30px;
 }
 
@@ -277,13 +276,13 @@ body{
 .project{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    margin: 100px 30px;
+    margin: 50px 30px;
     text-align: center;
+    gap: 50px;
 }
 
 .project .project-grid{
-     line-height: 30px;
-     padding: 50px;
+     padding: 10px;
 }
 
 .project .project-grid h3{
@@ -449,13 +448,10 @@ h1{
 #Contact .contact-container{
     background: url(images.file/img5.png) no-repeat;
     background-size: cover;
-    padding: 100px;
-    width: 100%;
-    
+    padding: 100px 20px;
 }
 .contact-container .contain{
-    margin-left: 30px;
-    color: whitesmoke;
+    color: #f5f5f5;
     font-size: 35px;
 }
 
@@ -471,6 +467,7 @@ h1{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .contain .fa{
@@ -563,12 +560,29 @@ h1{
 
 /* ---------------------------@media quary-------------------------- */
 
+@media  screen and (width <= 1200px) {
 
-
-@media screen and (width <= 600px) {
-    .logo-tag .my-logo{
-        width: 120px;
+    .home-content .home-content-right .men-img{
+        width: 350px;
     }
+
+    .container .img-tage img{
+        width: 70%;
+        margin: 0 5%;
+    }
+
+    .about-text h1{
+        font-size: 30px;
+        font-weight: 700;
+    }
+    
+}
+
+
+
+@media screen and (width <= 950px) {
+    .logo-tag .my-logo{
+        width: 120px;}
     #Home{
         height: 350px;
     }
@@ -610,8 +624,7 @@ h1{
     }
 
     .home-content .home-content-right .men-img{
-        width: 157px;
-        height: 260px;
+        width: 202px;
     }
     .home-content-left h4{
         font-size: 20px;
@@ -634,7 +647,6 @@ h1{
 
     #About{
         width: 100%;
-       /* padding: 50px 0px; */
     } 
     #About .container{
         display: block;
@@ -716,10 +728,8 @@ h1{
     /* ---------------------contact---------------- */
 
     .contact-container .contain{
-        width: 70%;
-        margin: 0;
-        color: whitesmoke;
-        font-size: 30px;
+        /* color: whitesmoke; */
+        font-size: 20px;
     }
 
     .contain a{
@@ -743,4 +753,23 @@ h1{
     .flex{
         justify-content: center;
     }
+}
+
+
+@media screen and (width <= 470px) {
+
+    .home-content{
+        display: block;
+    
+    }
+
+    .home-content .home-content-right .men-img{
+        display: none;
+    }
+
+    .home-content .home-content-left{
+        width: 100%;
+    }
+
+    
 }
